@@ -1,0 +1,108 @@
+.box {
+    position: relative;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.box .title {
+    font-size: 1.6em;
+    color: #f44336;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box .input {
+    position: relative;
+    margin-top: 20px;
+}
+
+.box .input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #999;
+    pointer-events: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.box .input input {
+    position: relative;
+    width: calc(100% - 20px); /* Сдвиг полей ввода */
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.1em;
+    transition: 0.3s ease;
+}
+.box .input input:user-invalid{
+    border-color: red;
+}
+.box .input input:focus,
+.box .input input:valid {
+    border-color: #f44336;
+}
+
+.box .input input:focus ~ label,
+.box .input input:valid ~ label {
+    color: #f44336;
+    top: -18px;
+    font-size: 0.8em;
+}
+
+.box .input .spin {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #f44336;
+    transition: 0.3s ease;
+}
+
+.box .input input:focus ~ .spin,
+.box .input input:valid ~ .spin {
+    width: 100%;
+}
+
+.box .button {
+    margin-top: 20px;
+    text-align: center; /* Центрирование кнопки */
+}
+
+.box .button button {
+    display: inline-block;
+    min-width: 100px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+    color: #727272;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.box .button button span {
+    font-weight: bold;
+}
+
+.box .button button i {
+    margin-left: 5px;
+}
+
+.box .button button:hover {
+    background-color: #727272;
+    color: #fff;
+}
+
+.box .pass-forgot {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    color: #999;
+    font-size: 0.9em;
+      margin-left: 10px; /* сдвиг текста "Забыли пароль" */
+}

@@ -1,0 +1,26 @@
+.personal-page-container {
+    background-image: url('../images/photo_2025-05-19_15-56-47.jpg'); /* Путь к тому же фоновому изображению */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.personal-card {
+    background-color: rgba(255, 255, 255, 0.55); /* Полупрозрачный фон карточки */
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

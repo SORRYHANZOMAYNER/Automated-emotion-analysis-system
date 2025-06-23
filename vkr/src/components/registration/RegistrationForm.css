@@ -1,0 +1,154 @@
+.overbox {
+    position: relative;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #f44336;
+}
+
+.overbox .material-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-right: -25px;
+    border-radius: 50%;
+    background-color: #fff; 
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 2;
+}
+
+.overbox .material-button span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border: 2px solid #f44336; 
+    border-radius: 50%;
+    display: block;
+}
+
+.overbox .material-button span:before,
+.overbox .material-button span:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 1px;
+    height: 10px;
+    margin-top: -5px;
+    margin-left: -1px;
+    background-color: #f44336;
+}
+
+.overbox .material-button span:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.overbox .material-button.alt-2 {
+    background-color: #fff;
+}
+
+.overbox .material-button.alt-2 span {
+    border-color: #f44336;
+}
+
+.overbox .material-button.alt-2 span:before,
+.overbox .material-button.alt-2 span:after {
+    background-color: #f44336;
+}
+
+.overbox .title {
+    font-size: 1.6em;
+    color: #fff;
+    font-weight: 700;
+    text-align: left;
+      margin-left: 10px;
+}
+
+.overbox .input {
+    position: relative;
+    margin-top: 20px;
+}
+
+.overbox .input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    pointer-events: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.overbox .input input {
+    position: relative;
+    width: calc(100% - 20px); 
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    font-size: 1.1em;
+    color: white;
+    background-color: transparent;
+    transition: 0.3s ease;
+}
+
+.overbox .input input::placeholder {
+    color: white;
+}
+
+.overbox .input input:focus,
+.overbox .input input:valid {
+    border-color: #fff;
+}
+
+.overbox .input input:focus ~ label,
+.overbox .input input:valid ~ label {
+    color: #fff;
+    top: -18px;
+    font-size: 0.8em;
+}
+
+.overbox .input .spin {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+.overbox .input input:focus ~ .spin,
+.overbox .input input:valid ~ .spin {
+    width: 100%;
+}
+
+.overbox .button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.overbox .button button {
+    display: inline-block;
+    min-width: 100px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #f44336;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.overbox .button button span {
+    font-weight: bold;
+}

@@ -1,0 +1,26 @@
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto-Medium', sans-serif !important; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto-Medium', sans-serif !important; 
+}
+
+code {
+  font-family: 'Roboto-Medium', monospace !important; 
+}
